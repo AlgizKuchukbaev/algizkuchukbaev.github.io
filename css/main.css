@@ -85,43 +85,6 @@ a {
   margin-top: 1.4em;
 }
 
-/* Pricing */
-
-.card {
-  border-radius: 1em;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: rgb(240, 240, 240);
-}
-
-.card-img-top {
-  margin-top: 40px;
-  margin-inline: 20px;
-  margin-bottom: 20px;
-  border-radius: 1px;
-  max-width: 200px;
-}
-
-.row,
-.col,
-.card-img {
-  text-align: center;
-}
-
-.text {
-  margin-top: 200px;
-  margin-bottom: 200px;
-}
-
-.text-card {
-  background-color: yellow;
-  border-radius: 18px;
-}
-
-.card-text {
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
-}
-
 #cards-other {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -166,37 +129,23 @@ a {
   );
 }
 
-/* home */
-
-.img-home {
-  width: 1100px;
+.email-anim {
+  animation: top-anim 2.5s ease 0s infinite normal forwards;
 }
 
-.container-img {
-  display: flex;
-  margin-inline: 4em;
-  margin-top: 2.5em;
-}
-
-.images-text {
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-}
-
-.img-text {
-  color: rgb(255, 255, 255);
-  font-size: 50px;
+.news-anim {
+  animation: right-anim 2.5s ease 0s infinite normal forwards;
 }
 
 .phone-anim {
-  animation: phone-anim 2.8s ease 0s infinite normal forwards;
+  animation: top-anim 2.8s ease 0s infinite normal forwards;
 }
 
 .market-anim {
-  animation: market-anim 2.5s ease 0s infinite normal forwards;
+  animation: right-anim 2.5s ease 0s infinite normal forwards;
 }
 
-@keyframes market-anim {
+@keyframes right-anim {
   0%,
   100% {
     transform: translateY(0) rotate(0);
@@ -224,7 +173,7 @@ a {
   }
 }
 
-@keyframes phone-anim {
+@keyframes top-anim {
   0%,
   100% {
     transform: translateX(0%);
@@ -269,10 +218,6 @@ a {
     width: 950px;
   }
 
-  .container-img {
-    margin-inline: 2em;
-  }
-
   #cards-other {
     grid-template-rows: repeat(4);
   }
@@ -303,10 +248,6 @@ a {
 }
 
 @media (max-width: 990px) {
-  .img-home {
-    width: 750px;
-  }
-
   .btn-danger,
   .btn-dark {
     margin-inline: 0;
@@ -324,23 +265,5 @@ a {
 @media (max-width: 690px) {
   .img-home {
     width: 600px;
-  }
-}
-
-@media (max-width: 570px) {
-  .img-home {
-    width: 500px;
-  }
-}
-
-@media (max-width: 570px) {
-  .img-home {
-    width: 400px;
-  }
-}
-
-@media (max-width: 400px) {
-  .container-img {
-    display: none;
   }
 }

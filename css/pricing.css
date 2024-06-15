@@ -1,0 +1,34 @@
+.card {
+  border-radius: 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgb(240, 240, 240);
+}
+
+.card-img-top {
+  margin-top: 40px;
+  margin-inline: 20px;
+  margin-bottom: 20px;
+  border-radius: 1px;
+  max-width: 200px;
+}
+
+.row,
+.col,
+.card-img {
+  text-align: center;
+}
+
+.text {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.text-card {
+  background-color: yellow;
+  border-radius: 18px;
+}
+
+.card-text {
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
